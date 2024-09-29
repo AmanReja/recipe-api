@@ -225,7 +225,7 @@ h1{
         border-radius: 10px;
         gap: 30px;
         position: relative;
-        right: 13px;
+        right: 14px;
 
     }
     .img-container{
@@ -252,8 +252,8 @@ h1{
     .button_container{
         width: 120px;
     }
-    /* .price{
-        padding: 4px 44px;
-    } */
+    .price{
+        padding: 0px 12px;
+    }
 
 }
