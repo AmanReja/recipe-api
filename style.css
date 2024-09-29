@@ -219,30 +219,41 @@ h1{
 
     .item-containe{
 
-        width: 230px;
+        width: 170px;
         height: 103px;
        
         border-radius: 10px;
         gap: 30px;
         position: relative;
-        right: 32px;
+        right: 25px;
 
     }
     .img-container{
         object-fit: cover;
-        width: 150px;
+        width: 130px;
         height: 100px;
         
     
     }
     .item-box{
-        height: 3400px;
+        height: 3500px;
         display: grid;
-        /* flex-direction: row; */
+         flex-direction: row; 
         grid-template-columns: 1fr 1fr;
         
-        column-gap: 10px;
+        column-gap: 0px;
         row-gap: 5px;
-        align-content:space-between;
+        align-content:space-between; 
+     
+         flex-wrap: wrap; 
+        
     }
+
+    .button_container{
+        width: 120px;
+    }
+    /* .price{
+        padding: 4px 44px;
+    } */
+
 }
