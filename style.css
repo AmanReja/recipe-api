@@ -219,11 +219,14 @@ h1{
 
     .item-containe{
 
-        width: 250px;
+        width: 230px;
         height: 103px;
        
         border-radius: 10px;
         gap: 30px;
+        position: relative;
+        right: 32px;
+
     }
     .img-container{
         object-fit: cover;
@@ -233,8 +236,13 @@ h1{
     
     }
     .item-box{
-        height: 7000px;
-        display: flex;
-        flex-direction: row;
+        height: 3400px;
+        display: grid;
+        /* flex-direction: row; */
+        grid-template-columns: 1fr 1fr;
+        
+        column-gap: 10px;
+        row-gap: 5px;
+        align-content:space-between;
     }
 }

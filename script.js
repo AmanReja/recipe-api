@@ -6,6 +6,8 @@ const recipe_info = document.querySelector(".recipe_info");
 const item_box = document.querySelector(".item-box");
 let foods = document.querySelectorAll(".item-containe");
 
+item_box.innerHTML = ` <h1>Search your favorite recipe</h1>`;
+
 const getRecipes = async (sortBy) => {
   const responce = await fetch(
     `https://dummyjson.com/recipes/search?q=${sortBy}`
@@ -43,7 +45,6 @@ const getRecipes = async (sortBy) => {
 };
 
 searchBtn.addEventListener("click", (e) => {
-  const recipe_button = document.querySelector(".button_container");
   item_box.innerHTML = `<h2>Fetching Recipes.......</h2>
   <div class="loader"></div>
   `;
@@ -52,7 +53,5 @@ searchBtn.addEventListener("click", (e) => {
   getRecipes(sortBy);
   inputFild.classList.toggle("active");
 
-  recipe_button.addEventListener("click", () => {
-    console.log("fsdf");
-  });
+  console.log();
 });
