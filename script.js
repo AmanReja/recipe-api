@@ -22,7 +22,7 @@ const getRecipes = async (sortBy) => {
   console.log(recipe_button);
 
   if (recipes.length == "") {
-    innerhtml += ` <h3>There is no recipe found</h3>`;
+    innerhtml += ` <h3>Sorry we could not found any recipe</h3>`;
   } else {
     recipes.forEach((recipe, index) => {
       innerhtml += `
