@@ -255,5 +255,8 @@ h1{
     .price{
         padding: 0px 12px;
     }
-
+  
+.recipe_info{
+    width: 80%;
+}
 }

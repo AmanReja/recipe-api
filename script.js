@@ -60,7 +60,7 @@ async function getDetails(index) {
 
   recipe_info.innerHTML = `<span id="close" onclick="geclose()" class="material-symbols-outlined" > close </span>
         <h3>${recipes[index].name}</h3>
-        <p>Catagory Name</p>
+        <p>Food catagory:<span>${recipes[index].cuisine}</spam></p>
         <div>${recipes[index].ingredients}</div>
 
         <img class="image-info" src="${recipes[index].image}" alt="" />
