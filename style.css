@@ -149,6 +149,17 @@ h1{
     flex-direction: column;
     align-items: center;
     display: none;
+    
+}
+p{
+    font-family: "Spicy Rice", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h1{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .recipe_info.active1{
@@ -157,13 +168,27 @@ h1{
 
 .image-info{
     object-fit: cover;
-    width: 60%;
-    height: 300px;
+    width: 25%;
+    height: 138px;
     border: none;
     outline: none;
     border-radius: 10px;
+    position: relative;
+    top: 7px;
 }
+.showcase{
+    background-color: #CDDC39;
+    padding: 23px 20px;
+    margin: 0 22px;
+    border-radius: 5px;
+}
+.ShowcaseB{
 
+    background-color: #1f3554;
+    padding: 23px 20px;
+    margin: 5px 177px;
+    border-radius: 5px;
+}
 /* HTML: <div class="loader"></div> */
 .loader {
     width: 74px;
@@ -258,5 +283,31 @@ h1{
   
 .recipe_info{
     width: 80%;
+    height: 500px;
+    transition: all 0.5s;
+   
 }
+.showcase{
+    background-color:transparent;
+    padding: 23px 20px;
+    margin: 0 ;
+    border-radius: 5px;
+}
+.ShowcaseB{
+
+    background-color:transparent;
+    padding: 23px 20px;
+    margin: 0;
+    border-radius: 5px;
+}
+.image-info{
+    width: 50px;
+    height: 50px;
+}
+p{
+    font-family: "Spicy Rice", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 }

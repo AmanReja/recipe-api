@@ -58,20 +58,21 @@ async function getDetails(index) {
   const data = await responce.json();
   const recipes = data.recipes;
 
-  recipe_info.innerHTML = `<span id="close" onclick="geclose()" class="material-symbols-outlined" > close </span>
-        <h3>${recipes[index].name}</h3>
+  recipe_info.innerHTML = `<button><span id="close" onclick="geclose()" class="material-symbols-outlined" > close </span></button>
+     <div class="showcase"> <h3>${recipes[index].name}</h3>
         <p>Food catagory:<span>${recipes[index].cuisine}</spam></p>
-        <div>${recipes[index].ingredients}</div>
+        <div>INGREDIANTRS:${recipes[index].ingredients}</div>
+     </div>
 
         <img class="image-info" src="${recipes[index].image}" alt="" />
         <h3>instructions:</h3>
-        <p>
+     <div class="ShowcaseB">   <p>
           Preheat the oven to 475°F (245°C).", "Roll out the pizza dough and
           spread tomato sauce evenly.", "Top with slices of fresh mozzarella and
           fresh basil leaves.", "Drizzle with olive oil and season with salt and
           pepper.", "Bake in the preheated oven for 12-15 minutes or until the
           crust is golden brown.", "Slice and serve hot.
-        </p>`;
+     </div> </p>`;
 }
 
 window.addEventListener("load", () => {
