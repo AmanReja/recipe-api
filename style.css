@@ -285,6 +285,7 @@ h1{
     width: 80%;
     height: 500px;
     transition: all 0.5s;
+    overflow-y: scroll;
    
 }
 .showcase{
@@ -303,6 +304,7 @@ h1{
 .image-info{
     width: 50px;
     height: 50px;
+
 }
 p{
     font-family: "Spicy Rice", serif;
